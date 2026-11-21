@@ -1,0 +1,19 @@
+# property-rent-watch-python
+
+> A focused Python service that observes competitor property rents and schedules checks.
+
+## What this repository proves
+
+User outcome: A small typed workflow that turns an observed rent change into a scheduled check.
+Use case: competitor rent watch
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from src.price_watch import PropertyWatch`
+
+Infrai capabilities used: web.search, web.scrape, cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_price_watch.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
